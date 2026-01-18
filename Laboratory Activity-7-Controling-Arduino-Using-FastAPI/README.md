@@ -1,32 +1,29 @@
 Laboratory Activity #4
 Arduino Serial Connection Using FastAPI
 
-Course
-COSC 111 – Internet of Things
+Course: COSC 111 – Internet of Things
 
-Objective
+📌 Objective
 
-The objective of this laboratory activity is to demonstrate Serial communication between an Arduino and a FastAPI web application for controlling LEDs remotely.
+To demonstrate Serial communication between an Arduino and a FastAPI web application for remotely controlling LEDs.
 
-Description
+📖 Description
 
-This activity uses Serial communication to connect an Arduino with a FastAPI-based Python application. The FastAPI server sends commands through the Serial port, allowing the Arduino to turn LEDs on or off and toggle individual LEDs.
+This project connects an Arduino to a FastAPI-based Python application using Serial communication. The FastAPI server sends control commands through API endpoints, allowing LEDs connected to the Arduino to be turned ON, OFF, or toggled individually.
 
-This setup demonstrates how web technologies can be integrated with microcontrollers, a fundamental concept in Internet of Things (IoT) systems.
+This project demonstrates basic Internet of Things (IoT) concepts by integrating hardware control with web-based APIs.
 
-Activity Overview
+⚙️ Features
 
-The system performs the following functions:
+Serial communication between Arduino and FastAPI
 
-Establishes Serial communication between Arduino and computer
+Web API endpoints for LED control
 
-Uses FastAPI to send control commands
+Turn all LEDs ON or OFF
 
-Controls multiple LEDs (ON, OFF, Toggle)
+Toggle individual LEDs (Red, Green, Blue)
 
-Enables remote device control through web requests
-
-Components Required
+🧰 Components Used
 
 Arduino Uno
 
@@ -40,12 +37,12 @@ Computer with Python and FastAPI
 
 Arduino IDE
 
-Serial Configuration
+🔌 Serial Configuration
 SERIAL_PORT = "COM3"
 BAUD_RATE = 9600
 
-Command Summary
-Command	Function
+🎮 Command Reference
+Command	Action
 R / G / B	Turn LED ON
 r / g / b	Turn LED OFF
 1 / 2 / 3	Toggle LED
